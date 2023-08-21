@@ -1,0 +1,432 @@
+
+
+/*Fontes*/
+@font-face {
+  font-family: balladeer;
+  src: url('../balladeer-light.otf') format('opentype');
+}
+
+/*Fontes*/
+@font-face {
+  font-family: vladimir;
+  src: url('../vladimir-script.ttf') format('truetype');
+}
+
+h1{color: red;}
+/******************Barra de Navegação*/
+
+
+header {
+
+  background-color: #343a40;
+  
+}
+
+
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-brand p{
+display: inline;
+  font-family: "balladeer", Sans-serif;
+  font-size: 30px;
+  
+  color: rgb(219, 161, 14);
+  text-shadow: 4px 2px 2px black;
+}
+
+header .navbar {
+  width: 100%;
+  background-color: #353d41;
+
+  /*Cor de fundo do Menu*/
+}
+
+.navbar-brand {
+  color: #edeef3;
+  /*Cor antes de Passar o Mouse*/
+}
+
+.navbar-brand:hover {
+  color: white;
+  /*Cor após de Passar o Mouse*/
+}
+
+.navbar-nav {
+  color: white;
+}
+
+container-fluid {
+  padding: 0;
+}
+
+/*********Carousel********/
+
+.carousel-inner img {
+  width: 100%;
+  height: 100vh;
+
+}
+
+#imgcarousel {
+  width: 100%;
+  height: 100vh;
+
+}
+
+
+.carousel-caption {
+  top: 10%;
+}
+
+
+.carousel-caption h1 {
+  font-family: "balladeer", Sans-serif;
+  font-size: 120px;
+  
+  color: darkgoldenrod;
+  text-shadow: 4px 2px 2px black;
+}
+
+
+
+.carousel-caption p {
+
+  font-family: "vladimir", Sans-serif;
+  font-weight: 1600px;
+  font-size: 50px;
+  color: darkgoldenrod;
+  text-shadow: 1px 1px 1.1px black, 0 0 1em black, 0 0 0.2em rgb(0, 0, 0);
+
+
+}
+
+/*botão do slider*/
+.main-btn {
+  background-color: #FFD700;
+  color:darkgoldenrod;
+  text-shadow: 1px 1px  black;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 400;
+  width: 200px;
+  height: 60px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 3px solid transparent;
+  transition: .5s;
+  margin-top: 20px;
+}
+
+.main-btn:hover {
+  text-decoration: none;
+  color: rgb(255, 208, 0);
+  text-shadow: 2px 1px black;
+  background-color: transparent;
+  border-color: rgb(255, 208, 0);
+}
+
+.carousel-indicators .active {
+  background-color: #65daf9;
+}
+
+
+#about-area img{
+  margin-bottom: 20px;
+ 
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 0px 40px 50px -20px rgba(0, 0, 0, 0.753);
+}
+
+.main-title{
+  color: darkgoldenrod;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 4%;
+  line-height: 3px;
+  font-size: 50px;
+
+}
+
+/*.main-title{
+
+  margin: 50px 0 0 0;
+  font-size: 40px;
+
+  text-shadow: 1px 1px 1.1px rgb(255, 196, 0), 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+}*/
+
+/*Estilo para adionar uma linha abaixo do main title com largura de 12%*/
+.main-title::after{
+  position: absolute;
+   content: "";
+   border-bottom: 4px ridge darkgoldenrod;
+   width: 40%;
+   top: 80%;
+   left:50% ;
+   transform: translateX(-50%);
+
+/* border-top: 3px solid darkgoldenrod;/
+*cria a linha abaixo do main title solida e da cor darkgoldenrod*/
+  
+  }
+  
+.main-title:hover{
+  color: rgb(223, 162, 9);
+  
+}
+
+/* css do sub-titutlo antes de iniciar o texto.*/
+/* Por que se hospedar com agente?*/
+.about-title{
+  font-size: 17px;
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/******************Sobre a empresa******************************************************************/
+
+#about-area .container{
+  background-color: white;
+}
+
+
+#about-list{
+padding-left: 0;
+list-style: none;/*remoção de estilo da ul*/
+}
+#about-list li{
+  line-height: 30px;/* espaçamento entre linhas*/
+}
+
+#about-list i{
+  color: #65daf9;
+  margin-right: 0;
+}
+
+
+
+/************************** Apartametno************************************************/
+
+/*o main-title::after está senso ultilizado novamente nesse campo por conta de 
+a letra 'p' estava atressando a linha abaixo do titulo, sendo necessário mudar a posição 
+um pouco mais a baixo da linha.*/
+#corousel-apartamento .main-title::after{
+    top: 90%;
+}
+
+#corousel-apartamento  .card{
+  width: 77%;
+  
+}
+
+
+
+.service-box{
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+
+.service-box i, .service-box h4{
+  transition: .5s;
+}
+
+ .service-box i {
+  font-size:36px ;
+  margin-bottom:20px;
+  color:#444;
+
+ }
+ .service-box h4{
+  font-size: 24px;
+  margin-bottom: 20px;
+ }
+
+ /***Transição de cor icone******/
+ .card-body:hover i#icon, .card-body:hover >i, .card-body:hover > h5 {
+  color:darkgoldenrod;
+ }
+
+ /*Por não ter icone de casal adulto, tive de almentar um casal de crianças*/
+ .card-body .fa-person{
+ font-size: 65px;
+
+ }
+ .card-body .fa-person-dress{
+  font-size: 65px;
+ 
+  }
+
+
+
+
+ /*APARTAMENTO*/
+ .col-md-4 i{
+  display: inline;
+ }
+
+
+ /*DADOS*/
+
+
+
+.circle-box div {
+  padding: 0 40px;
+}
+
+.progressbar-text {
+  font-weight: bold;
+  font-size: 32px;
+  color: #b8860b;
+}
+
+#data-area p{
+  color: #b8860b;
+  text-align: center;
+  font-size: 26px;
+  text-shadow: 1px 1px 1.1px black, 0 0 1em black, 0 0 0.2em rgb(0, 0, 0);
+}
+
+.progressbar-text{
+  text-shadow: 4px 2px 2px black;
+}
+
+#data-area{
+  height: 100%;
+  margin-top: 20px;
+  padding-top: 20px;
+  text-shadow: 4px 2px 2px black;
+  box-shadow: 2px 2px 5px black;
+}
+
+ /*pacotes*/
+ #pacotes-area img{
+  height: 250px;
+  width: 200px;
+ }
+
+#pacotes-area .card img {
+  height: 300px;
+  width: 200px;
+}
+
+#pacotes-area .card-body p{
+  line-height: 2px;
+}
+
+
+
+
+#icon{
+  color:darkgoldenrod;
+}
+.card-body>i, .card-body>h5 {
+  color:darkgoldenrod;
+ }
+
+/***Transição de cor icone******/
+.col-md-4:hover i#icon, .col-md-4:hover >i {
+  color:rgb(102, 75, 8);
+}
+
+.card-body:hover>i, .card-body:hover>h5{
+  color:rgb(102, 75, 8);
+ }
+
+
+
+
+/*footer*/
+footer{
+background-color:#343a40;
+color: white;
+}
+
+ .contact-box > i{
+  color: darkgoldenrod;
+  margin: 50px 0 0 0;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 1px 1px 1.1px rgb(255, 196, 0), 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+}
+
+.contact-box  p{
+  margin: 0;
+ 
+}
+
+#copy-area {
+  margin-top: 30px;
+}
+
+/*resposividade @midea*/
+
+@media(max-width:768px){
+  /*Geral*/
+
+  body{
+  margin-left: 0%;
+  }
+
+  .container{
+    padding: 0px 0;
+    margin-bottom: 0 px;
+  }
+   /*Slider*/
+   #mainSlider .carousel-inner, #mainSlider .carousel-item{
+    height: auto;
+    margin-right: 200px;
+   }
+   .carousel-caption h1 {
+    
+    font-size: 60px;
+   }
+  
+  
+  
+  
+   .main-title{
+    margin-bottom: 10%;
+ 
+  
+  }
+
+    /*Apartamentos*/
+
+  
+  
+   
+  /*Sobre a empresa*/
+
+  #about-area img{
+    margin-top: 130px;
+  }
+  
+  /****pacotes******/
+  #pacotes-area h5 {
+    font-size: 15px;
+  }
+
+  #pacotes-area .card-body p{
+    line-height: 15px;
+  }
+
+   #contact-area .main-title::after{
+    border-bottom: none;
+    }
+
+  }
+
+  @media(max-width: 425px) {
+    .carousel-caption p {
+      display: none;
+    }
+
+  }
+
+

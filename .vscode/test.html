@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <div class="container" id="nav-container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+          <img src="imagens/img/logopalace.png" alt="Logo Nova Olinda Palace Hotel" class="logo" id="logo"> Palace
+          Hotel.
+        </a>
+        <!--Setting Button-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" arial-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Setting NAV MENU-->
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" id="home-menu">Home</a>
+            <a class="nav-item nav-link" id="home-menu">Quem Somos</a>
+            <a class="nav-item nav-link" id="home-menu">Apartamentos</a>
+            <a class="nav-item nav-link" id="home-menu">Serviços</a>
+            <a class="nav-item nav-link" id="home-menu">Reservas</a>
+            <a class="nav-item nav-link" id="home-menu">Como chegar</a>
+            <a class="nav-item nav-link" id="home-menu">Contato</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!--******************MAIN***************-->
+  <main>
+     <div class="container-fluid">
+             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+             <ol class="carousel-indicators">
+                 <li data-target="carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                 <li data-target="carouselExampleIndicators" data-slide-to="1"></li>
+                 <li data-target="carousel-indicators" data-slide-to="2"></li>
+             </ol>
+
+  <!--*************Inicio Carousel*************-->
+             <div class="carousel-inner">
+          
+               <!--Banner01 sempre vai ter o 'active' informando que ele é o primeiro-->
+                   <div class="carousel-item active">
+                       <img class="d-block w-100" src="imagens/img/areainterna.jpeg" alt="Primeiro Slide">
+            
+               <!--Legendas-->
+                         <div class="carousel-caption d-none d-md-block">
+                              <h1 class="elementor-heading-title elementor-size-default">NOVA OLINDA PALACE</h1>
+                              <p>HOTEL</p>
+                              <a href="#" class="main-btn">Reservar Online</a>
+                         </div>
+                   </div><!--FIM-Banner01-->
+  
+               <!--Banner02-->
+  
+                   <div class="carousel-item">
+                     <img class="d-block w-100" src="./imagens/img/bar.jpeg" alt="Segundo Slide">
+                         <!--Legendas-->
+                          <div class="carousel-caption d-none d-md-block">
+                               <h1 class="elementor-heading-title elementor-size-default">NOVA OLINDA PALACE</h1>
+                               <p>HOTEL</p>
+                               <a href="#" class="main-btn">Reservar Online</a>
+                          </div>
+                   </div><!--FIM-Banner02-->
+  
+                   <!--Banner03-->
+                   <div class="carousel-item">
+                        <img class="d-block w-100" src="./imagens/img/salaofrente.jpeg" alt="Terceiro Slide">
+              
+                        <!--Legendas-->
+                         <div class="carousel-caption d-none d-md-block">
+                             <h1 class="elementor-heading-title elementor-size-default">NOVA OLINDA PALACE</h1>
+                             <p>HOTEL</p>
+                             <a href="#" class="main-btn">Reservar Online</a>
+                        </div>
+                    </div><!--FIM-Banner03-->
+        </div>
+            <!--************fim do Carousel**********-->
+   </main>
+
+
+  <script src="script.js"></script>
+
+  <!--font robot-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!--Script-->
+  <script src="script/scripts.js"></script>
+
+  <!--Parallax-->
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+
+  <!--Progress bar-->
+  <script src="script/progressbar.min.js"></script>
+
+  <!--Font awesome-->
+  <script src="https://kit.fontawesome.com/128b382a59.js" crossorigin="anonymous"></script>
+
+  <!--script_bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+        
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"crossorigin="anonymous"></script>
+        
+
+</html>

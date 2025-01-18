@@ -127,6 +127,7 @@ $( document ).ready(function() {
  let pacotesSection = $('#pacotes-area');
  let dadosSection = $('#data-area');
  let timeSection = $('#team-area');
+ let contactSection = $('#contact-area');
 
  let scrollTo = '';
 
@@ -145,10 +146,12 @@ $( document ).ready(function() {
    } else if(btnId == 'time-menu') {
      scrollTo = timeSection;
    } else if(btnId == 'localizacao') {
-    scrollTo = contactSection;
+    scrollTo = bannerSection;
   } else if(btnId == 'home-menu') {
+    scrollTo = bannerSectionn;
+  } else if(btnId == 'contact-menu') {
     scrollTo = contactSection;
-  } 
+  }
    else {
      scrollTo = bannerSection;
    }

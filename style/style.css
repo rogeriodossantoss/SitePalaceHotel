@@ -60,7 +60,8 @@ header .navbar {
 }
 
 container-fluid {
-  padding: 0;
+
+  padding-left: 100px;
 }
 
 /*********Carousel********/

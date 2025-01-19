@@ -161,19 +161,19 @@ container-fluid {
 }*/
 
 /*Estilo para adionar uma linha abaixo do main title com largura de 12%*/
-.main-title::after{
+/*.main-title::after{
   position: absolute;
    content: "";
    border-bottom: 4px ridge darkgoldenrod;
    width: 40%;
    top: 80%;
    left:50% ;
-   transform: translateX(-50%);
+   transform: translateX(-50%);/*
 
-/* border-top: 3px solid darkgoldenrod;/
-*cria a linha abaixo do main title solida e da cor darkgoldenrod*/
+//* border-top: 3px solid darkgoldenrod;
+//*cria a linha abaixo do main title solida e da cor darkgoldenrod
   
-  }
+}*/
   
 .main-title:hover{
   color: rgb(223, 162, 9);
@@ -392,8 +392,10 @@ color: white;
   
   
    .main-title{
-    margin-bottom: 10%;
- 
+    margin-right: 10%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    font-size: 28px;
   
   }
 
@@ -420,8 +422,19 @@ color: white;
    #contact-area .main-title::after{
     border-bottom: none;
     }
+  
 
-  }
+.main-title::after{
+
+
+ /*border-top: 3px solid darkgoldenrod;
+ cria a linha abaixo do main title solida e da cor darkgoldenrod*/
+}
+.main-btn {
+  font-size: 20px;
+
+}
+}
 
   @media(max-width: 425px) {
     .carousel-caption p {
@@ -429,5 +442,7 @@ color: white;
     }
 
   }
+
+  
 
 
